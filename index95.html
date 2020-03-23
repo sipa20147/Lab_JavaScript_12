@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Задание №2</title>
+</head>
+
+<body>
+
+  <button onclick="arrayShow()">Press!!!</button>
+
+  <p id="replace"></p>
+
+  <script>
+    var myArray = [7, 8, 9];
+    document.getElementById("replace").innerHTML = myArray;
+
+    function arrayShow() {
+      myArray.reverse();
+      document.getElementById("replace").innerHTML = myArray;
+    } 
+  </script>
+
+</body>
+
+</html>

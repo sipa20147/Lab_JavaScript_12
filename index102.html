@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Задание №9</title>
+</head>
+
+<body>
+
+  <button onclick="arrayShow()">Press!!!</button>
+
+  <p id="replace"></p>
+
+  <script>
+    var myArray = ["a", "b", "c", "b", "a"];
+    document.getElementById("replace").innerHTML = myArray;
+
+    function arrayShow() {
+      var myArray_1 = myArray.sort();
+      var unique = myArray_1.filter((it, index) => index === myArray.indexOf(it = it.trim()));
+      document.getElementById("replace").innerHTML = unique;
+    } 
+  </script>
+
+</body>
+
+</html>

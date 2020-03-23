@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Задание №14</title>
+  </head>
+
+<body>
+
+  <button onclick="arrayShow()">Press!!!</button>
+
+  <p id="replace"></p>
+
+  <script>
+    var myArray = [5, 6, 1, 30, 8, 0, 2, 10, 4];
+    document.getElementById("replace").innerHTML = myArray;
+
+    function arrayShow() {
+      myArray.sort(function (a, b) { return a - b });
+      document.getElementById("replace").innerHTML = myArray;
+    } 
+  </script>
+
+</body>
+
+</html>

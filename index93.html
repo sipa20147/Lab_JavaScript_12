@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Пример 3 с массивами</title>
+</head>
+
+<body>
+
+  <button onclick="arrayShow()">Press!!!</button>
+
+  <p id="replace"></p>
+
+  <script>
+    var myArray = [1989, "Азаренко", true];
+    document.getElementById("demo").innerHTML = myArray;
+
+    function arrayShow() {
+      myArray[0] = "Понедельник";
+      console.log("Index 0: " + myArray[0]);
+      document.getElementById("replace").innerHTML = myArray;
+    } 
+  </script>
+
+</body>
+
+</html>

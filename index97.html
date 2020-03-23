@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Задание №4</title>
+</head>
+
+<body>
+
+  <button onclick="arrayShow()">Press!!!</button>
+
+  <p id="replace"></p>
+
+  <script>
+    var myArray = [" Апрель", " Май", " Июнь"];
+    document.getElementById("replace").innerHTML = myArray;
+
+    function arrayShow() {
+      myArray.unshift("Январь", " Февраль", " Март");
+      document.getElementById("replace").innerHTML = myArray;
+    } 
+  </script>
+
+</body>
+
+</html>

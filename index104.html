@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Задание №11</title>
+  </head>
+
+<body>
+
+  <button onclick="arrayShow()">Press!!!</button>
+
+  <p id="replace"></p>
+
+  <script>
+    var myArray = [1, 2, 3, 4, 5];
+    document.getElementById("replace").innerHTML = myArray;
+
+    function arrayShow() {
+      myArray.splice(4, 1);
+      myArray.splice(0, 1);
+      document.getElementById("replace").innerHTML = myArray;
+    } 
+  </script>
+
+</body>
+
+</html>

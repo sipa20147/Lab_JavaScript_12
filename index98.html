@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Задание №5</title>
+  </head>
+
+<body>
+
+  <button onclick="arrayShow()">Press!!!</button>
+
+  <p id="replace"></p>
+
+  <script>
+    var myArray = ["Реал", "Барселона", "Атлетико"];
+    document.getElementById("replace").innerHTML = myArray;
+
+    function arrayShow() {
+      alert(myArray.shift());
+      document.getElementById("replace").innerHTML = myArray;
+    } 
+  </script>
+
+</body>
+
+</html>
